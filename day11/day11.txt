@@ -1,0 +1,2 @@
+조건문 - if, switch
+반목문 - while, for
