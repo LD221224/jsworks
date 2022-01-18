@@ -1,0 +1,16 @@
+자료형 - 숫자, 문자, 불리언
+변수 - 값을 1개 저장, 변경 할 수 있음, var, let으로 선언
+상수 constant variable - 선언 후 변경 할 수 없음, const 예악어로 선언 & 대문자 사용
+                        사실, 진리, 변환 단위
+
+연산자 - 조건, 논리, 대입
+
+배열 - 자료구조(대용량 자료)
+
+제어문
+        조건문 - if, switch
+                if / else if / else
+        반목문 - while, for
+                while / break
+
+함수 - return이 있는 경우, 없는 경우
