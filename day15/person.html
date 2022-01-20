@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체 정의하고 사용하기</title>
+</head>
+<body>
+    <script>
+        // 1개의 객체 생성 - {} 사용, '속성: 값' 형식
+        let person = {
+            name: "손흥민",
+            age: 30,
+            isMarried: false,
+
+            play: function(){
+                alert("골을 넣어요!!");
+            }
+        }
+
+        // person 객체 사용 - 객체이름.속성
+        console.log("이름 : " + person.name);
+        console.log("나이 : " + person.age);
+        console.log("결혼유무 : " + person.isMarried);
+
+        person.play();
+    </script>
+</body>
+</html>
