@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열 위치 찾는 함수</title>
+</head>
+<body>
+    <script>
+        let str = "Hello world, welcome world";
+        let n1 = str.indexOf("world");  // 첫번째 위치 반환
+        let n2 = str.indexOf("Korea");  // 일치하지 않으면 -1을 반환
+        let n3 = str.lastIndexOf("world");
+
+        console.log(n1);    // 6
+        console.log(n2);    // -1
+        console.log(n3);    // 21
+    </script>
+</body>
+</html>

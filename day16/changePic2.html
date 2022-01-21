@@ -10,11 +10,21 @@
     <img src="./images/cup-1.png" id="cup" alt="컵">
 
     <script>
+        // 객체의 onmouseover, onmouseout 속성
         let pic = document.querySelector("#cup");
-        pic.onclick = changePic;    // 괄호 없는 함수 선언
+
+        // 마우스를 올렸을때 이벤트
+        pic.onmouseover = changePic;
+
+        // 마우스가 벗어났을때 이벤트
+        pic.onmouseout = originPic;
 
         function changePic(){
             pic.src = "./images/cup-2.png";
+        }
+
+        function originPic(){
+            pic.src = "./images/cup-1.png";
         }
     </script>
 </body>

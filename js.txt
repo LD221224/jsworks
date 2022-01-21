@@ -32,16 +32,27 @@
         함수 호출
                 함수이름(매개변수)
 
-* 내장 객체
+* 객체(Object)
+        모든 자료형을 포함할 수 있는 복합 자료형
+
+* 내장 객체(Class)
         Math, Date, Document, Window
-* 객체(Class)
-        생성자 함수, 참조 자료형, 사용자 정의 자료형
-                function 클래스이름(){
-                        변수
-                        명령문
-                        함수
+        정적 클래스 - 예) Math.random()
+        동적 클래스 - 예) const now = new Date()
+* 사용자 객체(생성자 함수) = 속성 + 메서드
+        참조 자료형, 사용자 정의 자료형
+                예)
+                function ClassName(name, age){
+                        this.name = name;
+                        this.age = age;             
+
+                        this.f = function(){
+                                console.log("메서드");
+                        }
                 }
-* 사용자 정의 객체 = 속성 + 메서드
+                let ClassName1 = new ClassName("이름", 20);
+                ClassName1.name;
+                ClassName1.f();
 
 * 브라우저 객체 모델(BOM) - Window
 * 문서 객체 모델(DOM) - Document

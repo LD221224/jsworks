@@ -7,12 +7,16 @@
     <title>태그의 onClick 속성 예제</title>
 </head>
 <body>
+    <h2>이미지를 클릭하면 1초 후에 이미지 변경</h2>
     <img src="./images/cup-1.png" onclick="changePic()" id="cup" alt="컵">
 
     <script>
         function changePic(){
             let pic = document.querySelector("#cup");
-            pic.src = "./images/cup-2.png";
+
+            setTimeout(function(){
+                pic.src = "./images/cup-2.png";
+            }, 1000);
         }
     </script>
 </body>
