@@ -33,7 +33,8 @@
         
         // 당첨자 수
         let win = prompt("당첨자 수 : ");   // prompt 입력 - 문자
-        let winner = new Array(parseInt(win));  // 숫자로 변환
+        // let winner = new Array(parseInt(win));  // 숫자로 변환
+        let winner = new Array(Number(win));  // 숫자로 변환
 
         if(member == null || winner == null){
             document.write("<p>입력이 취소 되었습니다.</p>");
@@ -45,6 +46,34 @@
             // 랜덤 번호 추첨
             for(let i = 0; i < winner.length; i++){
                 winner[i] = Math.floor(Math.random() * member) + 1;
+                for(let j = 0; j < i; j++){
+                    if(winner[j] == winner[i]){
+                        i--;
+                    }
+                }
+            }
+            /*
+            i = 0
+            j = 0 0 < 0
+
+            i = 1
+            j = 0 0 < 1
+            winner[0] == winner[1]
+            j = 1 1 < 1
+
+            i = 2
+            j = 0 0 < 2
+            winner[0] == winner[2]
+            j = 1 1 < 2
+            winner[1] == winner[2]
+            j = 2 2 < 2
+
+            i = 3
+            ...
+            */
+            
+            // 출력
+            for(let i = 0; i < winner.length; i++){
                 document.write(winner[i] + "번, ");
             }
 
