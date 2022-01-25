@@ -1,33 +1,44 @@
+/* 
+    Incheon Blue    #008FFF
+    Incheon Green   #21FF9E
+    Incheon Gray    #3B3B3B
+    Incheon Sky     #4DE6E6
+    Incheon Ocean   #0D33FF
+*/
 /* 전체 영역 */
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 *{margin: 0; padding: 0;}
-#container{width: 1100px; margin: 0 auto;}
+#container{
+    width: 1100px; margin: 0 auto;
+    font-family: 'Gowun Dodum', sans-serif;
+}
 
 /* header 영역 */
-header{height: 80px; background-color: rgb(70, 85, 49);}
+header{height: 80px; background-color: #008FFF;}
 
-header #logo{width: 250px; float: left; padding: 15px 25px;}
-header #logo h1{font-family: 'Merienda', cursive;}
-header #logo a{text-decoration: none; color: yellow;}
+header #logo{width: 350px; float: left; padding: 15px 25px;}
+header #logo a{text-decoration: none; color: white;}
 
-header nav{width: 750px;float: right;}
+header nav{width: 650px;float: right;}
 
 header #topMenu{list-style: none; text-align: right; margin-right: 40px;}
 header #topMenu li{display: inline-block; margin: 15px; padding: 15px;}
 header #topMenu li a{text-decoration: none; color: white;}
-header #topMenu li a:hover{color: #2fb2fd}
+header #topMenu li a:hover{color: #3B3B3B}
 
 /* index 스타일 */
 #intro{height: 1000px;}
 
 #intro #heading h1{
-    height: 120px; background: #eee; padding: 20px;
-    text-align: center; font-size: 2.5em; 
+    height: 120px; color: #3B3B3B; 
+    background: url(/incheon/images/incheon.gif) no-repeat top right; 
+    background-size: contain;
+    padding: 20px; text-align: center; font-size: 2.5em; 
     line-height: 100px; /* 줄 맞춤 */
 }
 
-#intro #img_show{height: 600px; margin-top: 50px; text-align: center;}
-#intro #img_show img{border-radius: 10px; margin-bottom: 50px;}
+#intro #img_show{height: 600px; text-align: center;}
+#intro #img_show img{margin-top: 50px;}
 
 /* incheon 스타일 */
 #contents{width: 900px; margin: 30px auto;}

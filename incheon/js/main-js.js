@@ -1,11 +1,11 @@
 // img_show
-let picture = ["./images/bg11.jpg", "./images/bg22.jpg", "./images/bg55.jpg"];
+let picture = ["./images/incheon_1.jpg", "./images/incheon_2.jpg", "./images/incheon_3.jpg", "./images/incheon_4.jpg"];
 let pic_idx = 0;    // 배열의 위치
 
 showPicture();   // 함수 호출
 
 function showPicture(){
-    let pic = document.getElementById("cup");
+    let pic = document.getElementById("incheon_bg");
     pic.src = picture[pic_idx];  // pic_idx = 0, 1, 2 반복
 
     pic_idx++;  //  pic_idx += 1;
