@@ -25,11 +25,11 @@
         <main id="profile">
             <section id="intro">
                 <h2>자기소개</h2>
-                <img src="./images/cat.jpg" alt="사진" width="100" height="150">
-                <p>사는 곳 : 인천시 부평구</p>
+                <!-- <img src="./images/cat.jpg" alt="사진" width="100" height="150"> -->
+                <p>사는 곳 : 인천광역시 부평구</p>
                 <p>하는 일 : 웹 개발(Java, Python)</p>
                 <p>깃허브 : <a href="https://github.com/LD221224" target="_blank">https://github.com/LD221224</a></p>
-                <p>블로그 : <a href="https://section.blog.naver.com/" target="_blank">https://section.blog.naver.com/</a></p>
+                <!-- <p>블로그 : <a href="https://section.blog.naver.com/" target="_blank">https://section.blog.naver.com/</a></p> -->
                 <p>Email : dayeong2815@gmail.com</p>
             </section>
             <section id="education">
@@ -38,13 +38,24 @@
                 <p>명신여자고등학교 졸업</p>
             </section>
             <section id="career">
-                <h2>경력 및 과정</h2>
-                <ul>
-                    <li>2021.12 ~ 2022.03 파이썬(Python)기반 웹프로그래밍 개발자 과정</li>
+                <h2>경력 및 교육사항</h2>
+                <label><input type="radio" name="showList" id="showCareerList" onclick="if(this.checked){showCareer()}" checked>경력</label>
+                <label><input type="radio" name="showList" id="showEduList" onclick="if(this.checked){showEdu()}">교육사항</label>
+                <ul id="careerList">
                     <li>2018.06 ~ 2019.03 KCC정보통신</li>
                     <li>2016.03 ~ 2018.05 가온엔아이티</li>
                 </ul>
+                <ul id="eduList">
+                    <li>2021.12 ~ 2022.03 파이썬(Python)기반 웹프로그래밍 개발자 과정</li>
+                    <li>2018.07 Spring 프레임워크 중급</li>
+                    <li>2018.06 Java 프로그래밍 중급</li>
+                    <li>2018.06 데이터 모델링과 데이터베이스 설계</li>
+                    <li>2016.04 오픈소스 GIS 기초</li>
+                </ul>
             </section>
+            <div id="fix">
+                <a href="#topMenu">⏫</a>
+            </div>
         </main>
         <footer>
             <ul id="bottomMenu">
@@ -56,4 +67,5 @@
         </footer>
     </div>
 </body>
+<script src="./js/about_me-js.js"></script>
 </html>
