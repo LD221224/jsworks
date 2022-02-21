@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정규 표현식 예제</title>
+</head>
+<body>
+    <script>
+        /*
+            문자열 일치 여부 (대소문자 구분)
+            1. RegExp(표현식) - 클래스 사용
+            2. /표현식/
+        */
+
+        let text = "Hello World"
+
+        let pattern1 = new RegExp("hello")
+        console.log(pattern1.test(text))
+
+        let pattern2 = /world/
+        console.log(pattern2.test(text))
+    </script>
+</body>
+</html>
